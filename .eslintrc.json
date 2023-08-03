@@ -45,7 +45,8 @@
     "prettier/prettier": [
       "error",
       {
-        "requirePragma": false
+        "requirePragma": false,
+        "endOfLine": "auto"
       }
     ]
   }
