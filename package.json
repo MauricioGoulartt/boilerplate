@@ -19,7 +19,6 @@
   "lint-staged": {
     "src/**/*": [
       "yarn lint --fix",
-      "npx prettier . --write",
       "yarn test --findRelatedTests --bail"
     ]
   },
