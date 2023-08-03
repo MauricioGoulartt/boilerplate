@@ -1,4 +1,5 @@
 import { AppProps } from 'next/app'
+
 import Head from 'next/head'
 
 import GlobalStyles from 'styles/global'
