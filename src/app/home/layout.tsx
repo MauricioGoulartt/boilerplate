@@ -1,12 +1,16 @@
-import { AppProps } from 'next/app'
+'use client'
 
 import Head from 'next/head'
 
 import GlobalStyles from 'styles/global'
 
-function App({ Component, pageProps }: AppProps) {
+export default function HomeLayout({
+  children
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <>
+    <html lang="en">
       <Head>
         <title>React Avançado - Boilerplate</title>
         <link rel="shortcut icon" href="/img/icon-512.png" />
@@ -19,9 +23,7 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <GlobalStyles />
-      <Component {...pageProps} />
-    </>
+      <body>{children}</body>
+    </html>
   )
 }
-
-export default App
